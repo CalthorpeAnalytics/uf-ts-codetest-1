@@ -1,9 +1,8 @@
 # The Urban Footprint Frontend Code Test
 
-Thank you for your interest in pursuing a Software Engineer position with
-Urban Footprint!
+Thank you for your interest in a Software Engineer position with Urban Footprint!
 
-This take home test is designed to test your knowledge of Javascript and
+This exercise is designed to test your knowledge of Javascript and
 React.  While it does incorporate use of a Mapbox component, prior knowledge of
 Mapbox shouldn't be necessary in order to produce a solution.
 
@@ -12,9 +11,9 @@ This app was scaffolded using [Create React App](https://reactjs.org/docs/create
 The initial state of the app is a fullscreen map with a series of map pins displayed on it, and a FILTERS panel in the upper right corner.
 
 ## Goal
-The goal of this exercise is to work on the Feature Requirements for the FILTERS panel. You're not likely to complete all features in the short amount of time we have. Just share your screen and review whatever you have completed with the interviewer when the time is up.
+Work on the Feature Requirements below for the FILTERS panel. You're not likely to complete all requirements in the short amount of time we have. Just go through them in order and focus on good, working, well-factored code for the requriements you do complete. Share your screen and review what you have with the interviewer when the time is up.
 
-## FILTER Feature Requirements
+## FILTER Panel Feature Requirements
 1. When the user types text into the CITY NAME input, only cities whose `name` property contains the input value substring should be displayed on the map.
    1. Ignore whitespace at the start and end of the input value.
    2. Upper- and lowercase letters are treated the same when matching.
@@ -26,12 +25,8 @@ A working implementation of the solution can be seen [here](https://calthorpeana
 1. As text is typed in the city name filter, first 'd' for Denver or Dallas, then 'de' for only Denver.
 2. As the length of the sides are decreased, the size of the bounding square decreases and filters out cities.  
 
-## Getting Started
-
-Since the app was scaffolded with create-react-app, the process for installing and running in development mode is:
-
+## Running the App
 Install Node and npm: [download](https://nodejs.org/en/download/) or use [`nvm`](https://github.com/nvm-sh/nvm#installing-and-updating).
-
 
 ```
 git clone git@github.com:CalthorpeAnalytics/uf-fe-codetest.git
