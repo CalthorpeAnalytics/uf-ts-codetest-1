@@ -21,12 +21,12 @@ Work on the Feature Requirements below for the FILTERS panel. You're not likely 
    1. Display only cities whose coordinates are inside the bounding box.
    2. Center the bounding box on the "centroid" of the set of all cities. A centroid is "the point whose coordinates are the mean values of the coordinates of the points of the set".
 
-A working implementation of the solution can be seen [here](https://calthorpeanalytics.github.io/uf-fe-takehome-solution/).
-1. As text is typed in the city name filter, first 'd' for Denver or Dallas, then 'de' for only Denver.
-2. As the length of the sides are decreased, the size of the bounding square decreases and filters out cities.  
+A working implementation of the solution can be seen [here](https://calthorpeanalytics.github.io/uf-fe-takehome-solution/) (note that the UI may look slightly different).
+1. As text is typed in the CITY NAME filter, first 'd' hides all but 5 cities; typing 'de' shows Denver or Philadelphia, then 'den' shows only Denver.
+2. As a smaller number is entered into the LENGTH input, the size of the bounding square decreases and cities are filtered out.
 
 ## Running the App
-Install Node and npm: [download](https://nodejs.org/en/download/) or use [`nvm`](https://github.com/nvm-sh/nvm#installing-and-updating).
+If you need to, install Node and npm: [download](https://nodejs.org/en/download/) or use [`nvm`](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```
 git clone git@github.com:CalthorpeAnalytics/uf-fe-codetest.git
@@ -37,4 +37,4 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) to load the app in the browser.
 
-The application will usually "hot reload" when you edit a file and save it.
+The application _should_ "hot reload" when you edit a file and save it. If in doubt, reload the page.
