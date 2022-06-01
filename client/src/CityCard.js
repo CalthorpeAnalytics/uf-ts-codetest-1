@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 /**
  * Render a city card component that shows the image, name/state, and popultion
@@ -9,7 +9,7 @@ function CityCard(props) {
   const { city } = props;
 
   return (
-    <div className="card" >
+    <div className="card">
       <div className="image">
         <img src={city.image} alt={city.name} />
       </div>
@@ -18,7 +18,7 @@ function CityCard(props) {
         <div>{city.population}</div>
       </div>
     </div>
-  )
+  );
 }
 
 export default CityCard;

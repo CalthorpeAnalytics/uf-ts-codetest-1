@@ -6,25 +6,28 @@ import { useEffect, useState } from 'react';
 import { fetchCities } from './api';
 
 function App() {
-  const [cities, setCities] = useState([])
-  const [cityName, setCityName] = useState('')
+  const [cities, setCities] = useState([]);
+  const [cityName, setCityName] = useState('');
 
-
-  useEffect(()=> {
+  useEffect(() => {
     const loadCities = async () => {
-      const result = await fetchCities()
-      setCities(result)
-    }
-    loadCities()
-  },[])
+      const result = await fetchCities();
+      setCities(result);
+    };
+    loadCities();
+  }, []);
 
-  const filteredCities = cities.filter((city) => 
+  const filteredCities = cities.filter((city) =>
     city.name.toLowerCase().includes(cityName.toLowerCase())
-  )
+  );
 
   return (
     <div className="app-container">
-      <Sidebar cityName={cityName} onChangeFilter={setCityName} cities={filteredCities} />
+      <Sidebar
+        cityName={cityName}
+        onChangeFilter={setCityName}
+        cities={filteredCities}
+      />
       <Map cities={filteredCities} />
     </div>
   );
