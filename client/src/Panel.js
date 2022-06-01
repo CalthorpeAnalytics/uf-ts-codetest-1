@@ -6,9 +6,7 @@ function Panel(props) {
 
   return (
     <div className="panel">
-
       <h2>Filters</h2>
-      
       <div className="input">
         <label>City Name</label>
         <input

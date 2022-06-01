@@ -1,0 +1,61 @@
+.app-container {
+  display: grid; 
+  grid-template-columns: 500px 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "sidebar map"; 
+  text-align: center;
+  height: 100vh;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  background-color: #d0d0d0;
+}
+
+.map {
+  grid-area: map;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  padding-left: 8px;
+}
+
+input {
+  flex: 1;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  grid-template-rows: 75px;
+  grid-template-areas: "image text";
+  padding: 8px;
+}
+
+.card:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image > img {
+  grid-area: image;
+  height: 75px;
+  width: 75px;
+  border-radius: 4px;
+}
+
+.text {
+  grid-area: text;
+  place-self: center;
+}

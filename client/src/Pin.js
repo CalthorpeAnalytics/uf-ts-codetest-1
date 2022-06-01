@@ -8,11 +8,11 @@ const ICON = `M20.2,15.7L20.2,15.7c1.1-1.6,1.8-3.6,1.8-5.7c0-5.6-4.5-10-10-10S2,
 const SIZE = 20;
 
 // Important for perf: the markers never change, avoid rerender when the map viewport changes
-function Pins(props) {
-  const {data, onClick} = props;
+function Pin(props) {
+  const {city, onClick} = props;
 
-  return data.map((city, index) => (
-    <Marker key={`marker-${index}`} longitude={city.longitude} latitude={city.latitude}>
+  return (
+    <Marker key={`marker-${city.name}`} longitude={city.longitude} latitude={city.latitude}>
       <svg
         height={SIZE}
         viewBox="0 0 24 24"
@@ -27,7 +27,7 @@ function Pins(props) {
         <path d={ICON} />
       </svg>
     </Marker>
-  ));
+  );
 }
 
-export default React.memo(Pins);
+export default React.memo(Pin);
