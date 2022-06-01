@@ -1,7 +1,6 @@
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Map from './Map';
 import './App.css';
-import Sidebar from './Sidebar';
 import { useEffect, useState } from 'react';
 import { fetchCities } from './api';
 
@@ -23,12 +22,11 @@ function App() {
 
   return (
     <div className="app-container">
-      <Sidebar
+      <Map
+        cities={filteredCities}
         cityName={cityName}
         onChangeFilter={setCityName}
-        cities={filteredCities}
       />
-      <Map cities={filteredCities} />
     </div>
   );
 }

@@ -6,10 +6,10 @@ import React from 'react';
  */
 
 function CityCard(props) {
-  const { city } = props;
+  const { city, onSelectCity } = props;
 
   return (
-    <div className="card">
+    <div className="card" onClick={() => onSelectCity(city)}>
       <div className="image">
         <img src={city.image} alt={city.name} />
       </div>

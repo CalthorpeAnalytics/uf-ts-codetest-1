@@ -8,10 +8,10 @@ import CityCard from './CityCard';
  * There are a few existing css classes you may choose to use - sidebar, input
  */
 
-function Sidebar(props) {
-  const { cities, cityName, onChangeFilter } = props;
+function Panel(props) {
+  const { cities, cityName, onChangeFilter, onSelectCity } = props;
   return (
-    <div className="sidebar">
+    <div className="panel">
       <div className="input">
         <label>City Name</label>
         <input
@@ -21,10 +21,10 @@ function Sidebar(props) {
         />
       </div>
       {cities.map((city) => (
-        <CityCard key={city.name} city={city} />
+        <CityCard key={city.name} city={city} onSelectCity={onSelectCity} />
       ))}
     </div>
   );
 }
 
-export default React.memo(Sidebar);
+export default React.memo(Panel);
