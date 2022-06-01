@@ -8,7 +8,7 @@ const REACT_APP_MAPBOX_ACCESS_TOKEN =
   'pk.eyJ1IjoiYnJhZGxleWJvc3NhcmR1ZiIsImEiOiJja3NoeWR2ODkxemFoMnBwYTM1emhhYmU4In0.etmCrrx1r0vece_U8jvwFw';
 
 function Map(props) {
-  const { cities, cityName, onChangeFilter } = props;
+  const { cities, filteredCityName, setFilteredCityName } = props;
   const [popupInfo, setPopupInfo] = useState(null);
   const [viewport, setViewport] = useState({
     latitude: 37.7577,
@@ -40,8 +40,8 @@ function Map(props) {
 
       <Panel
         cities={cities}
-        cityName={cityName}
-        onChangeFilter={onChangeFilter}
+        filteredCityName={filteredCityName}
+        setFilteredCityName={setFilteredCityName}
         onSelectCity={onSelectCity}
       />
 

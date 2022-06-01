@@ -6,7 +6,7 @@ import { fetchCities } from './api';
 
 function App() {
   const [cities, setCities] = useState([]);
-  const [cityName, setCityName] = useState('');
+  const [filteredCityName, setFilteredCityName] = useState('');
 
   useEffect(() => {
     const loadCities = async () => {
@@ -17,15 +17,15 @@ function App() {
   }, []);
 
   const filteredCities = cities.filter((city) =>
-    city.name.toLowerCase().includes(cityName.toLowerCase())
+    city.name.toLowerCase().includes(filteredCityName.toLowerCase())
   );
 
   return (
     <div className="app-container">
       <Map
         cities={filteredCities}
-        cityName={cityName}
-        onChangeFilter={setCityName}
+        filteredCityName={filteredCityName}
+        setFilteredCityName={setFilteredCityName}
       />
     </div>
   );

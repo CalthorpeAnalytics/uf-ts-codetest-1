@@ -6,12 +6,12 @@
 
 .panel {
   position: absolute;
-  padding: 2rem 1rem;
+  padding: 1rem;
   left: 2rem;
   top: 2rem;
   bottom: 2rem;
   width: 500px;
-  background-color: #909090a4;
+  background-color: #f2f2f2bf;
   border-radius: 4px;
   overflow-y: auto;
 }
@@ -31,6 +31,11 @@ input {
   border-radius: 4px;
 }
 
+h2 {
+  text-align: start;
+  padding-left: 8px;
+}
+
 .card {
   display: grid;
   grid-template-columns: 75px 1fr;
@@ -40,7 +45,7 @@ input {
 }
 
 .card:hover {
-  background-color: #909090a4;
+  background-color: #b0b0b0bf;
   border-radius: 4px;
   cursor: pointer;
 }

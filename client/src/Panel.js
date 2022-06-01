@@ -9,15 +9,16 @@ import CityCard from './CityCard';
  */
 
 function Panel(props) {
-  const { cities, cityName, onChangeFilter, onSelectCity } = props;
+  const { cities, filteredCityName, setFilteredCityName, onSelectCity } = props;
   return (
     <div className="panel">
+      <h2>Filters</h2>
       <div className="input">
         <label>City Name</label>
         <input
           type="text"
-          value={cityName}
-          onChange={(e) => onChangeFilter(e.target.value)}
+          value={filteredCityName}
+          onChange={(e) => setFilteredCityName(e.target.value)}
         />
       </div>
       {cities.map((city) => (
