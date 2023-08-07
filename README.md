@@ -2,7 +2,7 @@
 
 Thank you for your interest in a Software Engineering position with UrbanFootprint!
 
-This exercise is designed to test your knowledge of typescript by presenting a "simple" working application that lacks typesafety even though typescript is installed.
+This exercise is designed to test your knowledge of typescript by presenting a "simple" working application that lacks typesafety even though typescript is installed. 
 
 While the React app uses a Mapbox component, prior knowledge of Mapbox isn't central to work on this problem. But understanding basic geographical ploting (eg longitudal and latitude) is necessary.
 
@@ -14,7 +14,9 @@ This application is functionally complete. You have 45 minutes to either impleme
 
 1. Accuracy: How accurate is the typing information in the codebase?
 2. Safety: How likely is a future developer to use a component incorrectly?
-3. Proportional: How much do the changes impact the other criteria relative to the effort involved?
+3. Performance: How will this application handle more data and will the user notice any churn?
+4. Modularity: Which parts of code should be further abstracted, and how well does the design reflect the prior mentioned criteria.
+5. Proportional: At the end we will ask you to weigh in on the tradeoffs for each of your proposed changes.
 
 This is a pairing exercise! That means we want you to ask questions to clarify how things are expected to work and talk aloud as you consider different solutions. The interviewers will help point out syntax errors and give you hints if you get stuck. You are free to use the internet to look up APIs.
 
