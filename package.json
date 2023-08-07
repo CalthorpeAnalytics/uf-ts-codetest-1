@@ -1,0 +1,13 @@
+{
+  "name": "uf-ts-codetest",
+  "version": "1.0.0",
+  "description": "Convenience entypoint.",
+  "scripts": {
+    "start": "concurrently \"pushd client && npm start\" \"pushd server && npm start\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
