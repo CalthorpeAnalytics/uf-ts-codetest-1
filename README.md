@@ -2,11 +2,22 @@
 
 Thank you for your interest in a Software Engineering position with UrbanFootprint!
 
-This exercise is designed to test your knowledge of Client/Server interaction over HTTP, manipulating data, and familiarity with React.
+This exercise is designed to test your knowledge of typescript by presenting a "simple" working application that lacks typesafety even though typescript is installed.
 
-While the React app uses a Mapbox component, prior knowledge of Mapbox isn't necessary to produce a solution.
+While the React app uses a Mapbox component, prior knowledge of Mapbox isn't central to work on this problem. But understanding basic geographical ploting (eg longitudal and latitude) is necessary.
 
 This app was scaffolded using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and uses a React wrapper for Mapbox called [react-map-gl](https://visgl.github.io/react-map-gl/).
+
+## Goal: Measuring success
+
+This application is functionally complete. You have 45 minutes to either implement or document (ie place "TODO") areas of improvement. The criteria is as follows:
+
+1. Accuracy: How accurate is the typing information in the codebase?
+2. Safety: How likely is a future developer to use a component incorrectly?
+3. Proportional: How much do the changes impact the other criteria relative to the effort involved?
+
+This is a pairing exercise! That means we want you to ask questions to clarify how things are expected to work and talk aloud as you consider different solutions. The interviewers will help point out syntax errors and give you hints if you get stuck. You are free to use the internet to look up APIs.
+
 
 ### What this app does
 1. There is an API endpoint to request city data  
